@@ -18,6 +18,10 @@ body {
 
   background-color: var(--body-bg);
 
+  @include tablet {
+    width: 100%;
+    overflow-x: hidden;
+  }
   -webkit-text-size-adjust: 100%;
 
   &.fixed {
@@ -28,10 +32,6 @@ body {
     width: 100%;
     overflow: hidden;
   }
-  // @media screen and (max-width: 1210px) {
-  //   overflow-x: hidden;
-  //   width: 100%;
-  // }
 }
 
 
@@ -50,12 +50,11 @@ html {
   line-height: normal;
   font-family: var(--font-family);
 
+  @include tablet {
+    width: 100%;
+    overflow-x: hidden;
+  }
   scroll-behavior: smooth;
-
-  // @media screen and (max-width: 1210px) {
-  //   overflow-x: hidden;
-  //   width: 100%;
-  // }
 }
 
 *,
