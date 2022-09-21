@@ -3,62 +3,53 @@ import { enableScroll } from '../functions/enable-scroll';
 import { getHeaderHeight } from '../functions/header-height';
 import _vars from '../_vars';
 
-import {addCustomClass, toggleCustomClass, elementHeight} from '../functions/customFunctions'
+import {addCustomClass, toggleCustomClass, elementHeight, removeCustomClass} from '../functions/customFunctions'
 
-// let overlay = document.querySelector('[data-overlay]');
+let overlay = document.querySelector('[data-overlay]');
 // let mobileMenu = document.querySelector('.mobile-menu');
 
-
+const burger = document.querySelector(".burger");
+const mobileMenu = document.querySelector(".header");
 
 
 // let burger = document.querySelector('.burger');
 // let burgerActive = document.querySelector('.burger.active');
 // let header = document.querySelector('header');
 
-// const mobileMenuHandler = function(overlayBg, menu, button,headerTag) {
-//   button.addEventListener('click', function(){
-//     menu.classList.toggle('active');
-//     button.classList.toggle('active');
-//     overlayBg.classList.toggle('active');
-//     headerTag.classList.toggle('active');
-//     document.body.classList.toggle('dis-scroll')
-//     getHeaderHeight();
-//   })
-// }
+const mobileMenuHandler = function(overlay, mobileMenu, burger) {
+  burger.addEventListener('click', function(){
+    mobileMenu.classList.toggle('active');
+    burger.classList.toggle('active');
+    overlay.classList.toggle('active');
+    addCustomClass(_vars.bodyEl, 'fixed')
+    // headerTag.classList.toggle('active');
+    // document.body.classList.toggle('dis-scroll')
+    getHeaderHeight();
+  })
+}
 
-// const hideMenuHandler = function(overlayBg, menu, button, headerTag) {
-//     menu.classList.remove('active');
-//     button.classList.remove('active');
-//     overlayBg.classList.remove('active');
-//     headerTag.classList.remove('active');
-//     document.body.classList.remove('dis-scroll')
-// }
+const hideMenuHandler = function(overlay, mobileMenu, burger) {
+    mobileMenu.classList.remove('active');
+    burger.classList.remove('active');
+    overlay.classList.remove('active');
+    removeCustomClass(_vars.bodyEl, 'fixed')
+    // headerTag.classList.remove('active');
+    // document.body.classList.remove('dis-scroll')
+}
 
 
-// if (overlay) {
-//   mobileMenuHandler(overlay,mobileMenu,burger,header);
-//   overlay.addEventListener('click', function(e){
-//     if (e.target.classList.contains('overlay')) {
-//       hideMenuHandler(overlay,mobileMenu,burger,header)
-//     }
-//   });
+if (overlay) {
+  mobileMenuHandler(overlay,mobileMenu,burger);
+  overlay.addEventListener('click', function(e){
+    if (e.target.classList.contains('overlay')) {
+      hideMenuHandler(overlay,mobileMenu,burger)
+    }
+  });
 
-// }
-
-const burger = document.querySelector(".burger");
-const mobileMenu = document.querySelector(".header");
-
-burger.addEventListener('click', function(){
-    // this.classList.toggle('active');
-    // mobileMenu.classList.toggle('active');
-
-    toggleCustomClass(this, 'active');
-    toggleCustomClass(mobileMenu, 'active')
-    toggleCustomClass(_vars.bodyEl ,'fixed')
+}
 
 
 
-})
 
 
 

@@ -11,6 +11,8 @@
 }
 
 .burger {
+  z-index: 50;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,12 +35,12 @@
       }
 
       &:first-child {
-        background-color: var(--bg-o);
+        background-color: var(--bg-b);
         transform: rotate(45deg) translate(32%, 262%);
       }
 
       &:last-child {
-        background-color: var(--bg-o);
+        background-color: var(--bg-b);
         transform: rotate(-45deg) translate(37%, -342%);
       }
     }
