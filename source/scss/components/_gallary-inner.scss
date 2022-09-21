@@ -1,0 +1,10 @@
+
+
+
+.gallary-top {
+  padding-bottom: clamp(10px, 1.404vw, 16px);
+
+@include for-tablet {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="index-first">
+      <div class="container">
+        <div class="index-first__box">
+          <div class="index-first__about">
+            <h1 class="index-first__title">
+              Life is better in running
+              <span class="index-first__subtitle">shoes</span>
+              .
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Egestas leo ultrices </p>
+          </div>
+          <div class="index-first__inner">
+            <div class="main-slider swiper-container">
+              <ul class="slider-list swiper-wrapper">
+                <li class="slider-item swiper-slide">
+                  <div class="slider-item__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/img1.webp'>
+                    <img width='429' height='378' src='img/index/img1.png' alt='image'>
+                  </picture>
+                </div>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <div class="slider-item__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/img1.webp'>
+                    <img width='429' height='378' src='img/index/img1.png' alt='image'>
+                  </picture>
+                </div>
+                </li>
+                <li class="slider-item swiper-slide">
+                  <div class="slider-item__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/img1.webp'>
+                    <img width='429' height='378' src='img/index/img1.png' alt='image'>
+                  </picture>
+                </div>
+                </li>
+              </ul>
+            </div>
+            <button class="swiper-button-next">
+              <svg width="16" height="28">
+                <use href='img/sprite/sprite.svg#arrow-right'></use>
+              </svg>
+            </button>
+          </div>
+          <div class="index-first__bottom">
+            <ul class="selects-list">
+              <li class="selects-item">
+                <span class="selects-item__name">Brand</span>
+                <div class='select'>
+                  <div class='select__header'>
+                    <span class='select__current'>Puma</span>
+                    <div class='select__icon'>
+                      <svg width="14" height="8">
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='select__body'>
+                    <ul class='select__wrapp'>
+                      <li class='select__item' data-choice='choosen'>Puma</li>
+                      <li class='select__item' data-choice='choosen'>Puma1</li>
+                      <li class='select__item' data-choice='choosen'>Puma2</li>
+                      <li class='select__item' data-choice='choosen'>Puma3</li>
+                      <li class='select__item' data-choice='choosen'>Puma4</li>
+                      <li class='select__item' data-choice='choosen'>Puma5</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="selects-item">
+                <span class="selects-item__name">Person</span>
+                <div class='select'>
+                  <div class='select__header'>
+                    <span class='select__current'>Man</span>
+                    <div class='select__icon'>
+                      <svg width="14" height="8">
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='select__body'>
+                    <ul class='select__wrapp'>
+                      <li class='select__item' data-choice='choosen'>Man</li>
+                      <li class='select__item' data-choice='choosen'>Woman</li>
+                      <li class='select__item' data-choice='choosen'>Children</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="selects-item">
+                <span class="selects-item__name">Size</span>
+                <div class='select'>
+                  <div class='select__header'>
+                    <span class='select__current'>Large</span>
+                    <div class='select__icon'>
+                      <svg width="14" height="8">
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='select__body'>
+                    <ul class='select__wrapp'>
+                      <li class='select__item' data-choice='choosen'>Large</li>
+                      <li class='select__item' data-choice='choosen'>Medium</li>
+                      <li class='select__item' data-choice='choosen'>Small</li>
+                      <li class='select__item' data-choice='choosen'>L</li>
+                      <li class='select__item' data-choice='choosen'>M</li>
+                      <li class='select__item' data-choice='choosen'>S</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="selects-item">
+                <span class="selects-item__name">Price</span>
+                <div class='select'>
+                  <div class='select__header'>
+                    <span class='select__current'>$150</span>
+                    <div class='select__icon'>
+                      <svg width="14" height="8">
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='select__body'>
+                    <ul class='select__wrapp'>
+                      <li class='select__item' data-choice='choosen'>$250</li>
+                      <li class='select__item' data-choice='choosen'>$200</li>
+                      <li class='select__item' data-choice='choosen'>$150</li>
+                      <li class='select__item' data-choice='choosen'>$100</li>
+                      <li class='select__item' data-choice='choosen'>$50</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="selects-btn orange-btn">buy now</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="index-second">
+      <div class="container container--mode">
+        <div class="index-second__box">
+          <div class="main-top second-top">
+            <h1 class="main-top__title">
+              Video</h1>
+            <span class="main-top__subtitle">Desire the feel of satisfaction.</span>
+
+            <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Egestas leo ultrices <br>commauris risus.
+            </p>
+          </div>
+
+          <div class="video-block" data-video>
+            <div class="video-block__video" data-src="https://youtu.be/RzovfEmI9vo">
+             <div class="video-block__picture">
+              <picture>
+                <source type='image/webp' srcset='img/video/video-prev.webp'>
+                <img width='555' height='326' src='img/video/video-prev.png' alt='image'>
+              </picture>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    <section class="blocks-section">
+      <div class="container">
+        <div class="main-blocks">
+          <div class="main-top blocks-top">
+            <h1 class="main-top__title">
+              FEATURE</h1>
+            <span class="main-top__subtitle">We have best feature in Shoes</span>
+          </div>
+          <ul class="blocks-list">
+            <li class="blocks-item">
+              <div class="blocks-item__icon">
+                <svg width="72" height="70">
+                  <use href='img/sprite/sprite.svg#img1'></use>
+                </svg>
+              </div>
+              <span class="blocks-item__title">Quality</span>
+              <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+              <a class="blocks-item__link" href="#">Read more</a>
+            </li>
+            <li class="blocks-item">
+              <div class="blocks-item__icon">
+                <svg width="72" height="70">
+                  <use href='img/sprite/sprite.svg#img2'></use>
+                </svg>
+              </div>
+              <span class="blocks-item__title">Flexible</span>
+              <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+              <a class="blocks-item__link" href="#">Read more</a>
+            </li>
+            <li class="blocks-item">
+              <div class="blocks-item__icon">
+                <svg width="72" height="70">
+                  <use href='img/sprite/sprite.svg#img3'></use>
+                </svg>
+              </div>
+              <span class="blocks-item__title">Long Lasting</span>
+              <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+              <a class="blocks-item__link" href="#">Read more</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="gallary-section">
+      <div class="container">
+        <div class="gallary-inner">
+          <div class="main-top gallary-top">
+            <h1 class="main-top__title">
+              GALLARY</h1>
+            <span class="main-top__subtitle">40+ YEARS’ EXPERIENCE</span>
+          </div>
+
+          <div class="gallary-tabs" data-tabs-parrent>
+            <span class="tabs-nav__name">Categories:</span>
+            <button class="swiper-btn swiper-btn__prev swiper-button-prev">
+              <svg width="16" height="8">
+                <use href='img/sprite/sprite.svg#arrow-right'></use>
+              </svg>
+            </button>
+            <button class="swiper-btn swiper-btn__next swiper-button-next">
+              <svg width="16" height="8">
+                <use href='img/sprite/sprite.svg#arrow-right'></use>
+              </svg>
+            </button>
+
+            <ul class="tabs-nav">
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn active" type="button" data-tab="1">All</button>
+              </li>
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn" type="button" data-tab="2">Male</button>
+              </li>
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn" type="button" data-tab="3">Female</button>
+              </li>
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn" type="button" data-tab="4">Kids</button>
+              </li>
+            </ul>
+            <ul class="tabs-content">
+              <li class="tabs-content__swiper active swiper-container" data-tab-content="1">
+                <ul class="tabs-content__list swiper-wrapper">
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img2.webp'>
+                      <img width='262' height='170' src='img/index/img2.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Sneakers</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$200</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img3.webp'>
+                      <img width='262' height='170' src='img/index/img3.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma RS-X Bold</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$180</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img4.webp'>
+                      <img width='262' height='170' src='img/index/img4.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Ferrari</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$190</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img5.webp'>
+                      <img width='262' height='170' src='img/index/img5.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Running</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$200</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs-content__swiper swiper-container" data-tab-content="2">
+                <ul class="tabs-content__list swiper-wrapper">
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img3.webp'>
+                      <img width='262' height='170' src='img/index/img3.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma RS-X Bold</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$200</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img2.webp'>
+                      <img width='262' height='170' src='img/index/img2.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Sneakers</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$180</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img5.webp'>
+                      <img width='262' height='170' src='img/index/img5.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Running</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$190</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img4.webp'>
+                      <img width='262' height='170' src='img/index/img4.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Ferrari</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$200</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs-content__swiper swiper-container" data-tab-content="3">
+                <ul class="tabs-content__list swiper-wrapper">
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img5.webp'>
+                      <img width='262' height='170' src='img/index/img5.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Running</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$200</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img4.webp'>
+                      <img width='262' height='170' src='img/index/img4.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Ferrari</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$180</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img3.webp'>
+                      <img width='262' height='170' src='img/index/img3.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma RS-X Bold</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$190</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img5.webp'>
+                      <img width='262' height='170' src='img/index/img5.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma RS-X Bold</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$200</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs-content__swiper swiper-container" data-tab-content="4">
+                <ul class="tabs-content__list swiper-wrapper">
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img4.webp'>
+                      <img width='262' height='170' src='img/index/img4.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Sneakers</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$200</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img5.webp'>
+                      <img width='262' height='170' src='img/index/img5.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Sneakers</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$180</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img2.webp'>
+                      <img width='262' height='170' src='img/index/img2.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma Running</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$190</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                  <li class="tabs-content__item swiper-slide">
+                    <div>
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img3.webp'>
+                      <img width='262' height='170' src='img/index/img3.png' alt='image'>
+                    </picture>
+                    </div>
+                    <span class="tabs-content__title">Puma RS-X Bold</span>
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Size:</span>
+                      <span class="tabs-content__value">Dubble-XL</span>
+                    </p>
+
+                    <p class="tabs-content__options">
+                      <span class="tabs-content__name">Price:</span>
+                      <span class="tabs-content__value">$200</span>
+                    </p>
+                    <button class="tabs-content__btn orange-btn">Buy now</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section">
+      <div class="container">
+        <div class="reviews-inner">
+          <div class="main-top reviews-top">
+            <span class="main-top__subtitle">Testimonials</span>
+          </div>
+
+          <div class="reviews-box">
+            <div class="reviews-box__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img6.webp'>
+                <img width='555' height='364' src='img/index/img6.png' alt='image'>
+              </picture>
+            </div>
+            <div class='reviews-swiper__box'>
+              <div class='reviews-swiper swiper-container'>
+                <ul class='reviews-swiper__list swiper-wrapper'>
+                  <li class='reviews-swiper__slide swiper-slide'>
+                    <div class="swiper-slide__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/avatar.webp'>
+                        <img width='100' height='100' src='img/index/avatar.png' alt='image'>
+                      </picture>
+                    </div>
+                    <span class="swiper-slide__name name-icon">Their services was best and friendly</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.</p>
+                    <span class="swiper-slide__name">Abram Korsgaard</span>
+                    <p>Athletic</p>
+                  </li>
+                  <li class='reviews-swiper__slide swiper-slide'>
+                    <div class="swiper-slide__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/avatar.webp'>
+                        <img width='100' height='100' src='img/index/avatar.png' alt='image'>
+                      </picture>
+                    </div>
+                    <span class="swiper-slide__name name-icon">Their services was best and friendly</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.</p>
+                    <span class="swiper-slide__name">Abram Korsgaard</span>
+                    <p>Athletic</p>
+                  </li>
+                  <li class='reviews-swiper__slide swiper-slide'>
+                    <div class="swiper-slide__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/avatar.webp'>
+                        <img width='100' height='100' src='img/index/avatar.png' alt='image'>
+                      </picture>
+                    </div>
+                    <span class="swiper-slide__name name-icon">Their services was best and friendly</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.</p>
+                    <span class="swiper-slide__name">Abram Korsgaard</span>
+                    <p>Athletic</p>
+                  </li>
+                </ul>
+              </div>
+              <button class='swiper-btn swiper-button-next'>
+                <svg width="16" height="8">
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </button>
+              <button class='swiper-btn swiper-button-prev'>
+                <svg width="16" height="8">
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </button>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="send-section">
+      <div class="container">
+        <div class="send-inner">
+          <div class="send-inner__image">
+            <picture>
+              <source type='image/webp' srcset='img/index/img7.webp'>
+              <img width='488' height='334' src='img/index/img7.png' alt='image'>
+            </picture>
+          </div>
+          <div class="send-box">
+            <div class="send-box__top main-top">
+              <span class="main-top__subtitle">Sign up to our Newsletter</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sagittis, Atiam lorem sed justo amet viverra in a.</p>
+            </div>
+
+            <form class="send-box__form">
+              <input type="email" class="send-box__input" placeholder="Enter your email address">
+              <button type="submit" class="send-box__btn orange-btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+  <!-- @include('partials/modals.html') -->
+
+  <!-- <button class="lift" id="upbutton">
+    <svg width='13' height='8'>
+      <use href='img/sprite/sprite.svg#arrow-top'></use>
+    </svg>
+  </button> -->
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.main-blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.blocks-top {
+  align-items: center;
+  padding-bottom: clamp(20px, 5.263vw, 60px);
+}

@@ -1,0 +1,126 @@
+.mail-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(233px, 17.063vw, 273px);
+  height: 38px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--font-family);
+  color: var(--color-a);
+
+  border: solid 1px var(--border-a);
+
+  transition: all 0.4s;
+
+  grid-gap: 11px;
+
+  svg {
+    transition: all 0.4s;
+
+    fill: var(--svg-fill);
+  }
+
+  &:hover {
+    background-color: var(--bg-c);
+
+    svg {
+      fill: var(--color-a);
+    }
+  }
+}
+
+.orange-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 15px 30px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(14px, 1.579vw, 18px);
+  line-height: 160%;
+  font-family: var(--font-family);
+  color: var(--color-a);
+
+  background-color: var(--bg-c);
+  border: 1px solid transparent;
+  border-radius: 7px;
+
+  transition: all 0.4s;
+
+  &:hover {
+    color: var(--color-c);
+
+    background-color: var(--btn-hover);
+    border: 1px solid var(--color-b);
+  }
+}
+
+.yellow-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--font-family);
+  color: var(--color-a);
+
+  background-color: transparent;
+  border: 2px solid var(--color-d);
+}
+
+.lift {
+  position: fixed;
+  bottom: clamp(10px, 3.125vw, 50px);
+  left: clamp(10px, 3.125vw, 50px);
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(25px, 3.125vw, 50px);
+  height: clamp(25px, 3.125vw, 50px);
+
+  background-color: var(--color-c);
+  border-radius: 50%;
+  transform: translateX(-250%);
+
+  transition: all 0.4s;
+
+  svg {
+    fill: var(--color-a);
+  }
+}
+
+.lift.show {
+  transform: translateX(0);
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.swiper-btn {
+  width: 50px !important;
+  height: 50px !important;
+
+  &__next {
+    order: 4;
+  }
+
+  &__prev {
+    order: 3;
+  }
+}

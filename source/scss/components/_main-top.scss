@@ -1,0 +1,40 @@
+.main-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  grid-gap: clamp(15px, 1.681vw, 20px);
+
+@include small-tablet {
+    align-items: center;
+
+    text-align: center;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14px, 1.345vw, 16px);
+    line-height: 160%;
+    font-family: var(--font-family);
+    color: var(--color-d-shadow);
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(16px, 1.681vw, 20px);
+    line-height: 150%;
+    font-family: var(--font-family2);
+    color: var(--color-c);
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(25px, 3.697vw, 44px);
+    line-height: 130%;
+    font-family: var(--font-family2);
+    color: var(--color-d);
+  }
+}

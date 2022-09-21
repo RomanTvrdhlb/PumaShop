@@ -1,0 +1,84 @@
+.main-slider {
+  position: relative;
+
+  width: 100%;
+  max-width: 430px;
+  margin: initial;
+
+  background-image: url("../img/sprite/border.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 85%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 389px;
+    height: 89px;
+
+    background-image: url(/img/sprite/shadow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-50%);
+  }
+}
+
+.swiper-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+
+  background-color: var(--bg-btn);
+  border-radius: 50%;
+
+@include mobile {
+    display: none;
+  }
+
+  &:hover {
+    svg {
+      stroke: var(--color-c);
+    }
+  }
+  svg {
+    transition: all 0.4s;
+
+    fill: transparent;
+    stroke: var(--color-d);
+  }
+}
+
+.swiper-button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+
+  background-color: var(--bg-btn);
+  border-radius: 50%;
+
+@include mobile {
+    display: none;
+  }
+
+  &:hover {
+    svg {
+      stroke: var(--color-c);
+    }
+  }
+  svg {
+    transform: rotate(180deg);
+
+    transition: all 0.4s;
+
+    fill: transparent;
+    stroke: var(--color-d);
+  }
+}

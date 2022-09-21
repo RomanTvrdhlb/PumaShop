@@ -1,0 +1,46 @@
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  grid-gap: clamp(10px, 1.754vw, 20px);
+  &__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(15px, 1.579vw, 18px);
+    line-height: 160%;
+    font-family: var(--font-family);
+    color: var(--color-d-shadow);
+  }
+
+  &__mail {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(15px, 1.579vw, 18px);
+    line-height: 160%;
+    font-family: var(--font-family);
+    color: var(--color-d-shadow);
+
+    grid-gap: clamp(5px, 0.877vw, 10px);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    grid-gap: clamp(18px, 2.544vw, 29px);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

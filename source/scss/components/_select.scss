@@ -1,0 +1,8 @@
+.select {
+  &__icon {
+    svg {
+      fill: transparent;
+      stroke: var(--bg-btn2);
+    }
+  }
+}

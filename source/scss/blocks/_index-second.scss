@@ -1,0 +1,23 @@
+.index-second {
+  padding: clamp(20px, 6.14vw, 70px) 0;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: calc((var(--container-width-mode) - var(--container-width)) / 2);
+
+    grid-gap: 20px;
+
+@include small-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.second-top {
+  align-items: flex-start;
+  max-width: 355px;
+}
