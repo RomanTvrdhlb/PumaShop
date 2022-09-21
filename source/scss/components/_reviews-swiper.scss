@@ -12,18 +12,34 @@
     align-items: center;
     padding: 20px;
 
-    .swiper-button-prev {
-      position: absolute;
-      top: 0;
-      right: 20%;
+@include tablet {
+      padding-bottom: 70px;
+    }
+  }
+  &__btn-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
 
-      transform: translateX(-20%);
+    display: flex;
+    flex-direction: row-reverse;
+    width: fit-content;
+
+    grid-gap: clamp(15px, 3.509vw, 40px);
+
+@include tablet {
+      top: initial;
+      right: 50%;
+      bottom: 0;
+
+      transform: translateX(50%);
     }
 
+    .swiper-button-prev {
+      display: flex;
+    }
     .swiper-button-next {
-      position: absolute;
-      top: 0;
-      right: 0;
+      display: flex;
     }
   }
 }
@@ -34,7 +50,13 @@
     justify-content: center;
 
     &__image {
+      display: flex;
+      align-items: center;
       margin-bottom: 70px;
+
+@include mobile {
+        justify-content: center;
+      }
     }
 
     &__name {

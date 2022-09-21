@@ -3,4 +3,23 @@
 
   grid-gap: 30px;
   grid-template-columns: 1fr 458px;
+
+@include tablet {
+    grid-template-columns: 100%;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+
+@include tablet {
+      justify-content: center;
+      width: 100%;
+
+      picture,
+      img {
+        width: 100%;
+      }
+    }
+  }
 }

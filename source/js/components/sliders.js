@@ -67,6 +67,27 @@ const tabsSlider = new Swiper('.tabs-content__swiper', {
     prevEl: '.swiper-button-prev',
   },
 
+  breakpoints: {
+    // mobile - 320-414
+    320: {
+      slidesPerView: "auto",
+    },
+     // mobile - 414-576
+     414: {
+      slidesPerView: 2,
+    },
+    // mobile + tablet - 576-768
+    576: {
+      slidesPerView: 3,
+      spaceBetween:20,
+    },
+    // desktop >= 768
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    }
+  }
+
 });
 
 const reviewsSwiper = new Swiper('.reviews-swiper', {
@@ -86,6 +107,27 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
   autoplay: {
     delay: 4000,
   },
+
+  breakpoints: {
+    // mobile - 320-576
+    320: {
+      slidesPerView: 1,
+    },
+     // mobile - 576-768
+     576: {
+      slidesPerView: 2,
+    },
+    // mobile + tablet - 768-1024
+    768: {
+      slidesPerView: 3,
+      spaceBetween:20,
+    },
+    // desktop >= 1024
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    }
+  }
 
 });
 

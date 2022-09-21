@@ -4,6 +4,12 @@
 
   grid-column: span 4;
 
+@include mobile {
+    order: initial;
+
+    grid-column: initial;
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -15,8 +21,18 @@
     align-items: flex-start;
 
     grid-gap: 10px;
+
+    @media (max-width:414px) {
+      width: fit-content !important;
+    }
   }
 
+
+  &__swiper {
+    @include mobile {
+      overflow: initial !important;
+    }
+  }
 
 
 

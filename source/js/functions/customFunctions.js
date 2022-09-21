@@ -5,6 +5,10 @@ export const removeCustomClass = (item, customClass) => {
 export const addCustomClass = (item, customClass) => {
   item.classList.add(customClass);
 }
+//-----------------------------------------------------
+export const toggleCustomClass = (item, customClass) => {
+  item.classList.toggle(customClass);
+}
 // ----------------------------------------------------
 export const removeClassInArray = (arr, customClass) => {
   arr.map((item) => {

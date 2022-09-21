@@ -116,6 +116,10 @@
   width: 50px !important;
   height: 50px !important;
 
+  @include mobile {
+    display: none;
+  }
+
   &__next {
     order: 4;
   }

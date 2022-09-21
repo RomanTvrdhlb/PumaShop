@@ -24,12 +24,10 @@
 
     grid-gap: 10px;
 
-@include small-tablet {
-      padding: 0;
-    }
-
 @include mobile {
+      max-width: 85%;
       min-height: 310px;
+      margin: 0 auto;
     }
 
     &:hover {

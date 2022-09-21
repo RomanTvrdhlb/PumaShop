@@ -1,20 +1,22 @@
-.header {
-  display: grid;
-
-  grid-gap: clamp(40px, 8.772vw, 100px);
-  grid-template-columns: 94px 1fr auto;
-}
 
 .nav-menu {
   display: flex;
   align-items: center;
+
+@include tablet {
+    justify-content: center;
+  }
 }
 
 .nav-list {
   display: flex;
   align-items: center;
 
-  grid-gap: clamp(20px, 3.509vw, 40px);
+  grid-gap: clamp(10px, 3.509vw, 40px);
+
+@include tablet {
+    flex-direction: column;
+  }
 
   &__item {
     font-style: normal;
@@ -53,6 +55,11 @@
   border-radius: 7px;
 
   transition: all 0.4s;
+
+  @include tablet {
+    height: 52px;
+  }
+
   &:hover {
     color: var(--color-c);
 

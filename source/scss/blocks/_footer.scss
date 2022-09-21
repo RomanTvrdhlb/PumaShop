@@ -6,6 +6,10 @@
 
   grid-gap: clamp(30px, 6.754vw, 77px);
   grid-template-columns: auto 1fr;
+
+@include tablet {
+    grid-template-columns: 100%;
+  }
 }
 .footer-bottom {
   display: flex;

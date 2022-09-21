@@ -10,6 +10,12 @@
     max-width: 525px;
 
     grid-gap: clamp(10px, 1.754vw, 20px);
+
+@include small-tablet {
+      align-items: center;
+      width: 100%;
+    }
+
     p {
       font-size: clamp(15px, 1.579vw, 18px);
     }

@@ -1,6 +1,8 @@
 .index-second {
   padding: clamp(20px, 6.14vw, 70px) 0;
 
+
+
   &__box {
     display: flex;
     justify-content: space-between;
@@ -9,6 +11,10 @@
     padding-left: calc((var(--container-width-mode) - var(--container-width)) / 2);
 
     grid-gap: 20px;
+
+@include tablet {
+      padding: 0 clamp(10px, 4.386vw, 50px);
+    }
 
 @include small-tablet {
       flex-direction: column;
@@ -20,4 +26,14 @@
 .second-top {
   align-items: flex-start;
   max-width: 355px;
+
+@include mobile {
+    align-items: center;
+  }
+}
+
+.video-block {
+  @include small-tablet {
+    margin: 0 auto;
+  }
 }

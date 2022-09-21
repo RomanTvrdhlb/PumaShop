@@ -1,8 +1,9 @@
-// import { disableScroll } from '../functions/disable-scroll';
-// import { enableScroll } from '../functions/enable-scroll';
+import { disableScroll } from '../functions/disable-scroll';
+import { enableScroll } from '../functions/enable-scroll';
 import { getHeaderHeight } from '../functions/header-height';
+import _vars from '../_vars';
 
-import {addCustomClass} from '../functions/customFunctions'
+import {addCustomClass, toggleCustomClass, elementHeight} from '../functions/customFunctions'
 
 // let overlay = document.querySelector('[data-overlay]');
 // let mobileMenu = document.querySelector('.mobile-menu');
@@ -43,6 +44,22 @@ import {addCustomClass} from '../functions/customFunctions'
 //   });
 
 // }
+
+const burger = document.querySelector(".burger");
+const mobileMenu = document.querySelector(".header");
+
+burger.addEventListener('click', function(){
+    // this.classList.toggle('active');
+    // mobileMenu.classList.toggle('active');
+
+    toggleCustomClass(this, 'active');
+    toggleCustomClass(mobileMenu, 'active')
+    toggleCustomClass(_vars.bodyEl ,'fixed')
+
+
+
+})
+
 
 
 

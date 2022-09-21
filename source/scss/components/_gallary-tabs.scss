@@ -3,4 +3,8 @@
 
   grid-gap: clamp(10px, 3.07vw, 35px) clamp(25px, 5.263vw, 60px);
   grid-template-columns: auto 1fr auto auto;
+
+@include mobile {
+    grid-template-columns: 100%;
+  }
 }

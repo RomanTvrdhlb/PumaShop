@@ -6,6 +6,12 @@
   grid-gap: clamp(15px, 3.509vw, 40px);
   grid-template-columns: repeat(4, auto);
 
+@include mobile {
+    justify-content: center;
+    order: initial;
+    width: 100%;
+  }
+
   &__item {
     display: flex;
     align-items: center;
@@ -24,6 +30,10 @@
     font-family: var(--font-family);
     font-family: "Poppins";
     color: var(--color-d-shadow);
+
+@include mobile {
+      display: none;
+    }
   }
 
   &__btn {

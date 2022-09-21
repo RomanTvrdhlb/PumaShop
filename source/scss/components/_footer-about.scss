@@ -4,6 +4,12 @@
   justify-content: center;
 
   grid-gap: clamp(10px, 1.754vw, 20px);
+
+@include tablet {
+    align-items: center;
+    order: 2;
+  }
+
   &__address {
     display: flex;
     flex-direction: column;
@@ -29,6 +35,10 @@
     color: var(--color-d-shadow);
 
     grid-gap: clamp(5px, 0.877vw, 10px);
+
+@include tablet {
+      align-items: center;
+    }
   }
 
   &__list {

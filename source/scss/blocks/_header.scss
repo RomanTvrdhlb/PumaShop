@@ -1,3 +1,28 @@
 .header {
+  display: grid;
   padding: clamp(15px, 3.509vw, 40px) 0 clamp(15px, 2.807vw, 32px);
+
+  transition: all 0.4s;
+
+  grid-gap: clamp(40px, 8.772vw, 100px);
+  grid-template-columns: 94px 1fr auto;
+@include tablet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    max-width: 320px;
+    height: 100%;
+    padding: 30px 20px;
+
+    background-color: var(--bg-i);
+    transform: translateX(-200%);
+
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+  }
+  &.active {
+    transform: translate(0);
+  }
 }

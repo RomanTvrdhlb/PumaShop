@@ -7,9 +7,24 @@
 
   grid-gap: clamp(30px, 5.526vw, 63px);
 
+@include small-tablet {
+    flex-direction: column;
+  }
+
   &__image {
     display: flex;
     align-items: center;
     width: fit-content;
+
+@include small-tablet {
+      justify-content: center;
+      width: 100%;
+      picture,
+      img {
+        width: 100%;
+
+        border-radius: 10px;
+      }
+    }
   }
 }

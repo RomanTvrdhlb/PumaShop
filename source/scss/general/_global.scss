@@ -20,7 +20,14 @@ body {
 
   -webkit-text-size-adjust: 100%;
 
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
 
+    width: 100%;
+    overflow: hidden;
+  }
   // @media screen and (max-width: 1210px) {
   //   overflow-x: hidden;
   //   width: 100%;
