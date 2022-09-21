@@ -33,11 +33,13 @@
       }
 
       &:first-child {
+        background-color: var(--bg-o);
         transform: rotate(45deg) translate(32%, 262%);
       }
 
       &:last-child {
-        transform: rotate(-45deg) translate(33%, -315%);
+        background-color: var(--bg-o);
+        transform: rotate(-45deg) translate(37%, -342%);
       }
     }
   }

@@ -4,10 +4,10 @@
 
   grid-gap: var(--list-gap);
   grid-template-columns: repeat(4, 1fr);
+
 @include mobile {
     grid-template-columns: repeat(2, 1fr);
-  }
-  --list-gap: clamp(40px, 7.895vw, 90px);
+  }  --list-gap: clamp(40px, 7.895vw, 90px);
 }
 .selects-item {
   position: relative;
@@ -17,7 +17,16 @@
   align-items: flex-start;
 
   grid-gap: 10px;
+
+
   &:not(:first-child) {
+    @include mobile {
+      &:nth-child(odd) {
+        &:after {
+          opacity: 0;
+        }
+      }
+    }
     &:after {
       content: "";
       position: absolute;
