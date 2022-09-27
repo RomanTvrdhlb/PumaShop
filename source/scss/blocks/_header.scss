@@ -14,7 +14,7 @@
     z-index: 100;
 
     max-width: 320px;
-    height: 100%;
+    height: fit-content;
     padding: 30px 20px;
 
     background-color: var(--bg-i);
@@ -29,11 +29,17 @@
   }
 }
 
-@media (min-height:600px) {
+@media (min-height:600px) and (min-width:1024px) {
   .index-first {
     display: flex;
     align-items: center;
     width: 100%;
     min-height: calc(100vh - var(--header-height));
+  }
+}
+
+@include tablet {
+  header {
+    z-index: 100;
   }
 }
