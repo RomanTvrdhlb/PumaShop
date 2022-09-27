@@ -6,6 +6,7 @@
 
   grid-gap: clamp(40px, 8.772vw, 100px);
   grid-template-columns: 94px 1fr auto;
+
 @include tablet {
     position: fixed;
     top: 0;
@@ -22,7 +23,17 @@
     grid-gap: 10px;
     grid-template-columns: 100%;
   }
+
   &.active {
     transform: translate(0);
+  }
+}
+
+@media (min-height:600px) {
+  .index-first {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
   }
 }
